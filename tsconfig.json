@@ -7,6 +7,10 @@
     "jsx": "react-jsx",
     "allowJs": true, // компилятор будет обрабатывать не только TS файлы, но и JS
     "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+    },
     "esModuleInterop": true, // позволяет работать с пакетами, которые используют common js как с обычными пакетами с помощью import
     "allowSyntheticDefaultImports": true // если какая-то библиотека не имеет default import, лоадеры вроде ts-loader или babel-loader автоматически создают их (import * as React from 'react' -> import React from 'react')
   },
