@@ -4,6 +4,8 @@
       "": ""
     }
   },
+  "decrement": "decrement",
+  "increment": "increment",
   "short": "short",
   "throw error": "throw error",
   "Войти": "Войти",
