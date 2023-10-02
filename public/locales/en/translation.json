@@ -5,6 +5,7 @@
   "Обновить страницу": "Refresh page",
   "throw error": "throw error",
   "Главная": "Main",
+  "О сайте": "About us",
   "Короткий язык": "En",
   "Войти": "Log in",
   "increment": "increment",
@@ -13,5 +14,6 @@
   "Введите пароль": "Add password",
   "Форма авторизации": "Auth form",
   "Вы ввели неверный логин или пароль": "Wrong login or password",
-  "Выйти": "Logout"
+  "Выйти": "Logout",
+  "Профиль": "Profile"
 }
