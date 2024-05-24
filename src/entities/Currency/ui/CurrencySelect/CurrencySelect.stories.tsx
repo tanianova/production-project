@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta, StoryFn } from '@storybook/react';
+import { Meta, ComponentStory } from '@storybook/react';
 import { CurrencySelect } from './CurrencySelect';
 
 export default {
@@ -10,7 +10,7 @@ export default {
     },
 } as Meta<typeof CurrencySelect>;
 
-const Template: StoryFn<typeof CurrencySelect> = (args) => <CurrencySelect {...args} />;
+const Template: ComponentStory<typeof CurrencySelect> = (args) => <CurrencySelect {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {};

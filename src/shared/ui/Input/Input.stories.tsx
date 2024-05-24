@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta, StoryFn } from '@storybook/react';
+import { Meta, ComponentStory } from '@storybook/react';
 import { Input } from 'shared/ui/Input/Input';
 
 export default {
@@ -10,7 +10,7 @@ export default {
     },
 } as Meta<typeof Input>;
 
-const Template: StoryFn<typeof Input> = (args) => <Input {...args} />;
+const Template: ComponentStory<typeof Input> = (args) => <Input {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
