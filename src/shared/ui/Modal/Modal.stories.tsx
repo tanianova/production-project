@@ -2,7 +2,7 @@ import React from 'react';
 import { ComponentStory, Meta } from '@storybook/react';
 import { Theme } from 'app/providers/ThemeProvider';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator';
-import { Modal } from 'shared/ui/Modal/Modal';
+import { Modal } from './Modal';
 
 export default {
     title: 'shared/Modal',
