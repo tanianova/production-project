@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta, ComponentStory } from '@storybook/react';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
 import { Text, TextSize, TextTheme } from './Text';
@@ -10,7 +10,7 @@ export default {
     argTypes: {
         backgroundColor: { control: 'color' },
     },
-} as Meta<typeof Text>;
+} as ComponentMeta<typeof Text>;
 
 const Template: ComponentStory<typeof Text> = (args) => <Text {...args} />;
 
@@ -61,4 +61,18 @@ SizeL.args = {
     title: 'Title lorem ipsun',
     text: 'Description Description Description Description',
     size: TextSize.L,
+};
+
+export const SizeM = Template.bind({});
+SizeM.args = {
+    title: 'Title lorem ipsun',
+    text: 'Description Description Description Description',
+    size: TextSize.M,
+};
+
+export const SizeS = Template.bind({});
+SizeS.args = {
+    title: 'Title lorem ipsun',
+    text: 'Description Description Description Description',
+    size: TextSize.S,
 };
