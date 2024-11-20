@@ -619,6 +619,12 @@
       "userId": "1",
       "text": "123213",
       "id": "TR1yDY6"
+    },
+    {
+      "articleId": "5",
+      "userId": "2",
+      "text": "comment",
+      "id": "snLDOpr"
     }
   ],
   "users": [
