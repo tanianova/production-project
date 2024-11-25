@@ -1,4 +1,6 @@
-export { ArticleDetails } from './ui/ArticleDetails/ArticleDetails';
+export {
+    ArticleDetails,
+} from './ui/ArticleDetails/ArticleDetails';
 
 export type {
     Article,
@@ -11,4 +13,9 @@ export { ArticleViewSelector } from './ui/ArticleViewSelector/ArticleViewSelecto
 export { ArticleSortSelector } from './ui/ArticleSortSelector/ArticleSortSelector';
 export { ArticleTypeTabs } from './ui/ArticleTypeTabs/ArticleTypeTabs';
 export { getArticleDetailsData } from './model/selectors/articleDetails';
-export { ArticleView, ArticleType, ArticleSortField } from './model/consts/articleConsts';
+export {
+    ArticleView,
+    ArticleType,
+    ArticleSortField,
+    ArticleBlockType,
+} from './model/consts/articleConsts';
