@@ -1,5 +1,5 @@
 import React from 'react';
-import { ComponentStory, Meta } from '@storybook/react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { ThemeDecorator } from '@/shared/config/storybook/ThemeDecorator';
 import { Theme } from '@/app/providers/ThemeProvider';
 import { ThemeSwitcher } from './ThemeSwitcher';
@@ -10,7 +10,7 @@ export default {
     argTypes: {
         backgroundColor: { control: 'color' },
     },
-} as Meta<typeof ThemeSwitcher>;
+} as ComponentMeta<typeof ThemeSwitcher>;
 
 const Template: ComponentStory<typeof ThemeSwitcher> = (args) => <ThemeSwitcher {...args} />;
 
