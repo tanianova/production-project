@@ -4,8 +4,8 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator';
 import { Article } from '@/entities/Article';
 import { ThemeDecorator } from '@/shared/config/storybook/ThemeDecorator';
-import { Theme } from '@/app/providers/ThemeProvider';
 import { ArticleRecommendationsList } from './ArticleRecommendationsList';
+import { Theme } from '@/shared/const/theme';
 
 export default {
     title: 'features/ArticleRecommendationsList',
