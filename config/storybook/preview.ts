@@ -4,7 +4,7 @@ import { RouterDecorator } from '../../src/shared/config/storybook/RouterDecorat
 import {
     SuspenseDecorator,
 } from '../../src/shared/config/storybook/SuspenseDecorator';
-import { Theme } from '../../src';
+import { Theme } from '../../src/shared/const/theme';
 
 export const parameters = {
     actions: { argTypesRegex: '^on[A-Z].*' },
@@ -14,6 +14,7 @@ export const parameters = {
             date: /Date$/,
         },
     },
+    layout: 'fullscreen',
 };
 
 export default {
