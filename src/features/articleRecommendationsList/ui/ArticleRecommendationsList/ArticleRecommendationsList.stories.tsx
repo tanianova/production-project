@@ -1,11 +1,9 @@
 import React from 'react';
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator';
 import { Article } from '@/entities/Article';
-import { ThemeDecorator } from '@/shared/config/storybook/ThemeDecorator';
 import { ArticleRecommendationsList } from './ArticleRecommendationsList';
-import { Theme } from '@/shared/const/theme';
 
 export default {
     title: 'features/ArticleRecommendationsList',
@@ -31,21 +29,18 @@ const article: Article = {
 
 export const Normal = Template.bind({});
 Normal.args = {};
-Normal.decorators = [StoreDecorator({}), ThemeDecorator(Theme.LIGHT)];
-
-// @todo доделать- не работает
-// Normal.parameters = {
-//     mockData: [
-//         {
-//             url: `${__API__}/articles?_limit=3`,
-//             method: 'GET',
-//             status: 200,
-//             response: [
-//                 { ...article, id: '1' },
-//                 { ...article, id: '2' },
-//                 { ...article, id: '3' },
-//             ],
-//
-//         },
-//     ],
-// };
+Normal.decorators = [StoreDecorator({})];
+Normal.parameters = {
+    mockData: [
+        {
+            url: `${__API__}/articles?_limit=3`,
+            method: 'GET',
+            status: 200,
+            response: [
+                { ...article, id: '1' },
+                { ...article, id: '2' },
+                { ...article, id: '3' },
+            ],
+        },
+    ],
+};
