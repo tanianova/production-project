@@ -40,9 +40,9 @@
 name: linting, testing, building
 on:
   push:
-    branches: [ master ]  # для запуска заменить на main
+    branches: [ main ]  # для запуска заменить на main
   pull_request:
-    branches: [ master ] # для запуска заменить на main
+    branches: [ main ] # для запуска заменить на main
 permissions:
   contents: write
   pages: write
