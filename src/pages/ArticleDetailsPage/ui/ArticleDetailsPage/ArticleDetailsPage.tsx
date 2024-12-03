@@ -1,8 +1,8 @@
 import { useTranslation } from 'react-i18next';
 import { memo } from 'react';
 import { useParams } from 'react-router-dom';
-import { VStack } from 'src/shared/ui/deprecated/Stack';
-import { Card } from 'src/shared/ui/deprecated/Card';
+import { VStack } from '@/shared/ui/deprecated/Stack';
+import { Card } from '@/shared/ui/deprecated/Card';
 import { ArticleDetails } from '@/entities/Article';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import {

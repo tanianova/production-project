@@ -1,6 +1,6 @@
 import { memo } from 'react';
-import { Icon } from 'src/shared/ui/deprecated/Icon';
-import { Button, ButtonTheme } from 'src/shared/ui/deprecated/Button';
+import { Icon } from '@/shared/ui/deprecated/Icon';
+import { Button, ButtonTheme } from '@/shared/ui/deprecated/Button';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import ListIcon from '@/shared/assets/icons/list-24-24.svg';
 import TiledIcon from '@/shared/assets/icons/tiled-24-24.svg';

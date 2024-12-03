@@ -2,9 +2,9 @@ import { useTranslation } from 'react-i18next';
 import { memo, useCallback } from 'react';
 import { useSelector } from 'react-redux';
 
-import { HStack } from 'src/shared/ui/deprecated/Stack';
-import { Text } from 'src/shared/ui/deprecated/Text';
-import { Button, ButtonTheme } from 'src/shared/ui/deprecated/Button';
+import { HStack } from '@/shared/ui/deprecated/Stack';
+import { Text } from '@/shared/ui/deprecated/Text';
+import { Button, ButtonTheme } from '@/shared/ui/deprecated/Button';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { getUserAuthData } from '@/entities/User';
