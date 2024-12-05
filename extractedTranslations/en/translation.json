@@ -12,6 +12,8 @@
   "increment": "increment",
   "short": "short",
   "throw error": "throw error",
+  "{{count}} просмотров": "",
+  "{{count}} просмотров_plural": "",
   "Админ панель": "Админ панель",
   "Админка": "Админка",
   "Айти": "",
