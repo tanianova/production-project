@@ -1,7 +1,14 @@
 import { FeatureFlags } from '@/shared/types/featureFlags';
+import { LOCAL_STORAGE_LAST_DESIGN_KEY } from '@/shared/const/localstorage';
 
+const defaultFeatures: FeatureFlags = {
+    isAppRedesigned:
+        localStorage.getItem(LOCAL_STORAGE_LAST_DESIGN_KEY) === 'new',
+};
 // ФИЧИ НЕ МЕНЯЮТСЯ В ХОДЕ СЕССИИ, ИХ НЕОБЯЗАТЕЛЬНО ДЕЛАТЬ РЕАКТИВНЫМИ!
-let featureFlags: FeatureFlags = {};
+let featureFlags: FeatureFlags = {
+    ...defaultFeatures,
+};
 
 export function setFeatureFlags(newFeatureFlags?: FeatureFlags) {
     if (newFeatureFlags) {
@@ -10,7 +17,7 @@ export function setFeatureFlags(newFeatureFlags?: FeatureFlags) {
 }
 
 export function getFeatureFlag(flag: keyof FeatureFlags) {
-    return featureFlags[flag] ?? true;
+    return featureFlags[flag];
 }
 
 export function getAllFeatureFlags() {
