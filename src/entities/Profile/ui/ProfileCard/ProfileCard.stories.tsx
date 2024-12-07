@@ -1,9 +1,10 @@
 import React from 'react';
-import { Meta, ComponentStory } from '@storybook/react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { Country } from '@/entities/Country';
 import { Currency } from '@/entities/Currency';
 import avatar from '@/shared/assets/tests/storybook.jpg';
-import { ProfileCard } from '../..';
+import { ProfileCard } from './ProfileCard';
+import { NewDesignDecorator } from '@/shared/config/storybook/NewDesignDecorator';
 
 export default {
     title: 'entities/ProfileCard',
@@ -11,25 +12,31 @@ export default {
     argTypes: {
         backgroundColor: { control: 'color' },
     },
-} as Meta<typeof ProfileCard>;
+} as ComponentMeta<typeof ProfileCard>;
 
 const Template: ComponentStory<typeof ProfileCard> = (args) => (
     <ProfileCard {...args} />
 );
 
-export const Primary = Template.bind({});
-Primary.args = {
+const primaryArgs = {
     data: {
         username: 'admin',
-        age: 30,
-        country: Country.Russia,
-        lastname: 'Gracheva',
-        first: 'Tatiana',
-        city: 'Moscow',
+        age: 22,
+        country: Country.Ukraine,
+        lastname: 'ulbi tv',
+        first: 'asd',
+        city: 'asf',
         currency: Currency.USD,
         avatar,
     },
 };
+
+export const Primary = Template.bind({});
+Primary.args = primaryArgs;
+
+export const PrimaryRedesigned = Template.bind({});
+PrimaryRedesigned.args = primaryArgs;
+PrimaryRedesigned.decorators = [NewDesignDecorator];
 
 export const withError = Template.bind({});
 withError.args = {
